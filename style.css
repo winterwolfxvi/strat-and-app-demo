@@ -24,45 +24,52 @@ html {
     align-items: flex-start;
 }
 
-.text-section{
+.text-section{ /*Section with text, highlighted with border*/
+    /*The 3 CSS elements below define a red border around text-section, the section of the HTML document containing text.
+    Creating borders is a good way to keep track of where your sections are, and manage size, margins, and spacing
+    When finalizing changes, you can either comment the border sections out or delete them.*/
     border-style: solid;
     border-width: 2px;
     border-color: red;
-    display: grid; 
-    justify-content: center; 
-    margin-top: 20px; 
+
+    display: grid; /*Aligns elements (text in this case) 'hamburger' style*/
+    justify-content: center; /*Centers content inside text-section*/
+    margin-top: 20px; /*Margin/spacing above text-section*/
 }
 
-h1{
-    font-family: 'Arial'; 
-    font-size: 50px; 
-    color: black; 
-    text-align: center; 
+h1{ /*Header*/
+    font-family: 'Arial'; /*Changes font of header.*/
+    font-size: 50px; /*Changes size of header*/
+    color: black; /*Changes color of header*/
+    text-align: center; /*Aligns header to center.
+    text-align has 3 main choices: right, left, center*/ 
 }
 
-p{
-    font-family: 'Arial'; 
-    font-size: 25px; 
-    color: black; 
-    text-align: center; 
+p{ /*Paragraph*/
+    font-family: 'Arial'; /*Changes font of paragraph element (your "default" text)*/
+    font-size: 25px; /*Changes size of paragraph element*/
+    color: black; /*Changes color of paragraph element*/
+    text-align: center; /*Aligns text to center*/
 }
 
-.img-section{
+.img-section{ /*Section with image and caption/single paragraph element inside section*/
+    /*The 3 CSS elements below define a red border to indicate this section, purely for keeping track of spacing. You can delete or comment out these 3 when finalizing changes*/
     border-style: solid;
     border-width: 2px;
     border-color: red;
     
-    display: grid; 
-    justify-self: center; 
-    align-self: center;
+    display: grid;
+    /*Centers image and caption in img-section*/
+    justify-items: center; 
+    align-items: center;
     margin-top: 20px; 
-    max-width: 50%; 
 }
 
 img{
-    width: 100%;
-    height: auto;
-    border-radius: 0%;
+    /*width and height define the dimensions of the image. Try modifying the size of your image element!*/
+    width: 500px;
+    height: 500px;
+    border-radius: 0%; /*Changes the rounding of corners in the image. 50% will change the image into a circle.*/
 }
 
 /* Fun stuff. Don't worry about this for now */

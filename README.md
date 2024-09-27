@@ -7,6 +7,7 @@ You will be creating and customizing a simple portfolio using these 3 languages.
 
 Before starting, go to "Extensions" on the left, search "Live Server" and install the first option. 
 This will allow you to view your portfolio/code from a local browser. 
+**IF YOU'RE ON A SCHOOL COMPUTER YOU CAN IGNORE THE ADMIN POP-UP, LIVE SERVER CAN WORK WITHOUT IT
 
 We will be starting with the HTML file. 
 After you're done installing Live Server, move to index.html on the sidebar to begin making your very own web portfolio :D
