@@ -1,0 +1,91 @@
+/*
+This is CSS, or Cascading Styling Sheets. It is responsible for stylizing components of the website such as text and images, and most importantly making things look presentable and pleasant :D
+
+Try changing some of the features below and see what happens! 
+Descriptions are provided to help you customize your portfolio :)
+
+When changing colors, you can use hex codes or type in simple colors like red, blue, orange, yellow.
+Hex code finder: https://imagecolorpicker.com/
+
+When changing fonts, you can use any font you'd like. Just type in the name of the font and it should work.
+CSS font reference: https://www.w3schools.com/cssref/css_websafe_fonts.php
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: white; 
+}
+
+.container{
+    display: grid; /* This is a display element that changes the layout of the website */
+    /* try changing between 'grid' and 'flex' to see the difference. See which one fits your preferences. */
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text-section{
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    display: grid; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+h1{
+    font-family: 'Arial'; 
+    font-size: 50px; 
+    color: black; 
+    text-align: center; 
+}
+
+p{
+    font-family: 'Arial'; 
+    font-size: 25px; 
+    color: black; 
+    text-align: center; 
+}
+
+.img-section{
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    
+    display: grid; 
+    justify-self: center; 
+    align-self: center;
+    margin-top: 20px; 
+    max-width: 50%; 
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+}
+
+/* Fun stuff. Don't worry about this for now */
+#button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 20px 2px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 12px; 
+    box-shadow: 0 4px #999; 
+}
+
+#button:hover {
+    background-color: red; 
+}
+
+#button:active {
+    box-shadow: 0 2px #666; 
+    transform: translateY(4px); 
+}
