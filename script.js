@@ -114,14 +114,27 @@ function fun() {
     }
 
     function drawBlocks() {
+        const paragraph = document.querySelector(".text-block");
+        const paragraphStyles = window.getComputedStyle(paragraph);
+        const htmlStyles = window.getComputedStyle(document.documentElement);
+        
+        const blockColor = paragraphStyles.backgroundColor;
+        const textColor = paragraphStyles.color;
+        const htmlBackgroundColor = htmlStyles.backgroundColor;
+    
         blocks.forEach(block => {
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = blockColor; 
             ctx.fillRect(block.x, block.y, block.width, block.height);
-
-            ctx.fillStyle = "#FFFFFF"; // Set text color to white
+ 
+            ctx.strokeStyle = htmlBackgroundColor; 
+            ctx.lineWidth = 2;
+            ctx.strokeRect(block.x, block.y, block.width, block.height);
+    
+            // Draw the text inside the block
+            ctx.fillStyle = textColor; 
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-
+    
             // Adjust font size to fit the text inside the block
             let fontSize = 16;
             ctx.font = `${fontSize}px Arial`;
@@ -129,7 +142,7 @@ function fun() {
                 fontSize--;
                 ctx.font = `${fontSize}px Arial`;
             }
-
+    
             ctx.fillText(block.text, block.x + block.width / 2, block.y + block.height / 2);
         });
     }
