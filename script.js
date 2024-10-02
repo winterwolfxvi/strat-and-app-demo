@@ -1,11 +1,11 @@
 // Welcome to the JS file! This is where your website can be made interactive, adding tons of awesome web functionality.
-// In this file, there is a secret button. You can reveal the super awesome button by commenting out Line _.
+// In this file, there is a secret button. You can reveal the super awesome button by commenting out Line 8.
 //To comment out a line, just add two slashes at the beginning of the line like this: //
 
-//See what happens when you click the button! :D 
+//See what happens when you click the button! :D Once you get an idea of what is happening, settings can be found on Lines 47-51.
 
 const button = document.getElementById('button');
-//button.style.display="none"; 
+button.style.display="none"; //Comment out this line to reveal the super awesome button.
 button.addEventListener("click", fun);
 
 function fun() {
