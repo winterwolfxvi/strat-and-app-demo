@@ -28,21 +28,26 @@ Stuff like text, images, and buttons can be considered the "parts" of the skelet
     <body> <!-- This is the body tag! This is where you put the content of your website. -->
         <!--Each HTML element is surrounded by <>. </> indicates a closing bracket.-->
         <div class="container"> <!--This is a div tag, which creates a section. This document has 3 sections: container, text-section for text content, and img-section for the image and caption below.-->
-            <div class="text-section">
+            <div class="welcome-message">
+                <p>Welcome to FRC!</p>
+                <img src="CYBERLIONS.png">
+            </div>
+            <div class="text-section yay">
                 <h1>Your Name</h1> <!--This is a header tag! It is a text element, so whatever is in between the <> will actually show up as text on your webpage.-->
                 <!--Below are several paragraph elements. This is the element you use for "default" text-->
                 <!--Try editing the following paragraph elements:-->
                 <!--Of course, you can always add another paragraph element to make your portfolio more detailed.-->
-                <p>Favorite Food: </p>
-                <p>Favorite Color: </p>
-                <p>Fun Fact About Myself: </p>
+                <p class="text-block">Favorite Food: </p>
+                <p class="text-block">Favorite Color: </p>
+                <p class="text-block">Fun Fact About Myself: </p>
             </div>
-            <div class="img-section">
-                <p>This is a cool image:</p> <!--Caption for the image.-->
-                <img src="https://i.redd.it/0xbpv5w6c5ib1.jpg"> <!--This is an image tag! It is an element that allows you to put images on your webpage.-->
+            <div class="img-section yay">
+                <p >This is a cool image:</p> <!--Caption for the image.-->
+                <img id="cool-img" src="https://i.redd.it/0xbpv5w6c5ib1.jpg"> <!--This is an image tag! It is an element that allows you to put images on your webpage.-->
                 <!--You can change this image by searching for an image online, right-clicking it, getting the image address and replacing the link after 'src' with the address-->
             </div>
             <button id="button">AWESOME BUTTON</button> <!--Surprise for later.-->
+            <canvas id="coolthingy" width="600" height="400"></canvas>
         </div>
         <script src="script.js" async defer></script> <!-- Links to JS file -->
     </body>

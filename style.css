@@ -73,6 +73,31 @@ img{
 }
 
 /* Fun stuff. Don't worry about this for now */
+.welcome-message {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-message p {
+    font-size: 50px;
+    color: red; /* Example color for the paragraph */
+    margin: 10px 0;
+}
+
+.welcome-message img {
+    width: 250px; /* Example width for the image */
+    height: 250px;
+    margin-top: 10px;
+}
+
 #button {
     background-color: #4CAF50; 
     color: white; 
@@ -95,4 +120,25 @@ img{
 #button:active {
     box-shadow: 0 2px #666; 
     transform: translateY(4px); 
+}
+
+#coolthingy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.text-block{
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.hide{
+    display: none;
 }

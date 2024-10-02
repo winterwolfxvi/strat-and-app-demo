@@ -2,7 +2,6 @@ Once you've had enough exploring the demonstration, visit our projects in the St
 You can copy and paste any links into your browser
 
 1. Team Website
-(You can play around with Inspect / Ctrl+Shift+I if the computer lets you)
 https://team8521.com/
 
 2. Scouting App Design Sketch on Invision
