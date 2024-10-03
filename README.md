@@ -14,4 +14,6 @@ We will be starting with the HTML file.
 After you're done installing Live Server, move to index.html on the sidebar to begin making your very own web portfolio :D
 To use Live server, click "Go Live" on the bottom navigation bar of Visual Studio Code. (Either bottom left or bottom right)
 
+When making changes, make sure to save using Ctrl+S so you can see your changes on the Live Server Browser.
+
 Have fun! Feel free to ask any questions.

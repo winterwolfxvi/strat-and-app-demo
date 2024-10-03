@@ -36,11 +36,11 @@ function fun() {
 
     /*
     Regular Settings:
-    const paddleWidth = 250, paddleHeight = 10;
+    const paddleWidth = 250, paddleHeight = 10; 
     const ballRadius = 20;
-    let ballSpeedX = 4, ballSpeedY = -4;
-    const duplicateBallOnCollision = false;
-    const maxBalls = 5;
+    let ballSpeedX = 4, ballSpeedY = -4; 
+    const duplicateBallOnCollision = true; 
+    const maxBalls = 5; 
     */
     
     //YOU CAN CHANGE SETTINGS HERE :))
@@ -119,17 +119,17 @@ function fun() {
     function drawBlocks() {
         const paragraph = document.querySelector(".text-block");
         const paragraphStyles = window.getComputedStyle(paragraph);
-        const htmlStyles = window.getComputedStyle(document.documentElement);
+        //const htmlStyles = window.getComputedStyle(document.documentElement);
         
         const blockColor = paragraphStyles.backgroundColor;
         const textColor = paragraphStyles.color;
-        const htmlBackgroundColor = htmlStyles.backgroundColor;
+        //const htmlBackgroundColor = htmlStyles.backgroundColor;
     
         blocks.forEach(block => {
             ctx.fillStyle = blockColor; 
             ctx.fillRect(block.x, block.y, block.width, block.height);
  
-            ctx.strokeStyle = htmlBackgroundColor; 
+            ctx.strokeStyle = textColor; 
             ctx.lineWidth = 2;
             ctx.strokeRect(block.x, block.y, block.width, block.height);
     

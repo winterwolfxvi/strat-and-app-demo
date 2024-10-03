@@ -4,12 +4,18 @@ This is CSS, or Cascading Styling Sheets. It is responsible for stylizing compon
 Try changing some of the features below and see what happens! 
 Descriptions are provided to help you customize your portfolio :)
 
+------RESOURCES------
 When changing colors, you can use hex codes or type in simple colors like red, blue, orange, yellow.
 In Visual Studio Code, you can use the in-built color picker by clicking the small squares next to the colors.
 Hex code finder: https://imagecolorpicker.com/
 
 When changing fonts, you can use any font you'd like. Just type in the name of the font and it should work.
 CSS font reference: https://www.w3schools.com/cssref/css_websafe_fonts.php
+
+List of border styles (for border-style element): https://www.w3schools.com/css/css_border.asp
+
+Feel free to look up anything else that isn't included here.
+Once you finished styling using both HTML and CSS, you can wait for instructions or find out whats happening in script.js ;)
 */
 
 html {
@@ -36,20 +42,22 @@ body{
 .text-section{ /*Section with text, highlighted with border*/
     /*The 3 CSS elements below define a red border around text-section, the section of the HTML document containing text.
     Creating borders is a good way to keep track of where your sections are, and manage size, margins, and spacing
-    When finalizing changes, you can either comment the border sections out or delete them.*/
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(138, 65, 65);
-    background-color: white;
+    When finalizing changes, you can either comment the border sections out or delete them.
+    (You can also keep the border if you like it, up to you)*/
+    border-style: solid; /*List of border styles provided above.*/
+    border-width: 2px; /*thickness of border*/
+    border-color: rgb(138, 65, 65); /*border color*/
     border-radius: 0%;
     /* Try changing the value of border-radius. (0%-100%) */
 
+    background-color: white; /*Changes the background color of text-section section specifically.*/
     display: grid; /*Aligns elements (text in this case) 'hamburger' style*/
     justify-content: center; /*Centers content inside text-section*/
     margin-top: 20px; /*Margin/spacing above text-section*/
 }
 
 h1{ /*Header*/
+    background-color: white;
     font-family: 'Arial'; /*Changes font of header.*/
     font-size: 50px; /*Changes size of header*/
     color: black; /*Changes color of header*/
@@ -58,7 +66,7 @@ h1{ /*Header*/
 }
 
 p{ /*Paragraph*/    
-    background-color: white;
+    background-color: white; /*Changes "highlight" of paragraph element. Try it out :)*/
     font-family: 'Arial'; /*Changes font of paragraph element (your "default" text)*/
     font-size: 25px; /*Changes size of paragraph element*/
     color: black; /*Changes color of paragraph element*/
@@ -66,13 +74,14 @@ p{ /*Paragraph*/
 }
 
 .img-section{ /*Section with image and caption/single paragraph element inside section*/
-    /*The 3 CSS elements below define a red border to indicate this section, purely for keeping track of spacing. You can delete or comment out these 3 when finalizing changes*/
-    border-style: solid;
+    /*The 3 CSS elements below define a red border to indicate this section for keeping track of spacing. You can delete or comment out these 3 when finalizing changes
+    (or keep it for stylization purposes :))*/
+    border-style: solid; /*List of border styles provided above.*/
     border-width: 2px;
     border-color: rgb(138, 65, 65);
-    background-color: white;
     border-radius: 0%;
     
+    background-color: white; /*Changes background color of img-section specifically*/
     display: grid;
     /*Centers image and caption in img-section*/
     justify-items: center; 
@@ -88,20 +97,22 @@ img{
 }
 
 
+/*for navigation bar.
+you can change anything highlighted with comments but dont mess with anything else you dont know about if you want a working navbar*/
 .navbar{
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: rgb(138, 65, 65);
+    background-color: rgb(138, 65, 65); /*Changes secondary color of nav-bar*/
     width: 100vw;
     height: 8vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    font-family: 'Arial'; 
-    font-weight: normal;
-    color: white;
+    font-family: 'Arial'; /*Changes font of nav-bar*/
+    font-weight: normal; /*Sets default font weight of nav-bar*/
+    color: white; /*Changes color of nav-bar*/
 }
 
 li{
@@ -124,7 +135,7 @@ a[href]{
     width: 10rem;
     height: 8vh;
     font-size: 30px;
-    color: white;
+    color: white; /*Changes color of the nav options*/
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -132,19 +143,15 @@ a[href]{
 }
 
 ul:not([class="navbar-title"]):hover{
-    background-color: rgb(201, 118, 118);
+    background-color: rgb(201, 118, 118); /*changes color of nav options when cursor is hovering over*/
     cursor: pointer;
 }
 
 .navbar-title{
-    background-color: rgb(98, 49, 49);
+    background-color: rgb(98, 49, 49); /*changes bg color of navbar title*/
     width: 20rem;
     font-weight: bolder;
 }
-
-
-
-
 
 /* Fun stuff. Don't worry about this for now */
 
@@ -163,6 +170,7 @@ ul:not([class="navbar-title"]):hover{
 
 .welcome-message p {
     font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: red; /* Example color for the paragraph */
     margin-top: 10vh;
 }
