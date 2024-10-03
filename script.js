@@ -104,7 +104,10 @@ function fun() {
     }
 
     function drawPaddle() {
-        ctx.fillStyle = "#0095DD";
+        const paragraph = document.querySelector(".text-block");
+        const paragraphStyles = window.getComputedStyle(paragraph);
+        const paddleColor = paragraphStyles.color;
+        ctx.fillStyle = paddleColor;
         ctx.fillRect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
     }
 
