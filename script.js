@@ -14,6 +14,7 @@ function fun() {
     const message = document.querySelector(".welcome-message");
     const userName = document.querySelector(".text-section h1").textContent.trim();
 
+    // Update the welcome message with the user's name
     message.style.display = "flex";
     message.querySelector("p").textContent = `Welcome to FRC, ${userName}!`;
     button.style.display = "none";
@@ -103,10 +104,7 @@ function fun() {
     }
 
     function drawPaddle() {
-        const paragraph = document.querySelector(".text-block");
-        const paragraphStyles = window.getComputedStyle(paragraph);
-        const paddleColor = paragraphStyles.backgroundColor;
-        ctx.fillStyle = paddleColor;
+        ctx.fillStyle = "#0095DD";
         ctx.fillRect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
     }
 
