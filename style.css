@@ -5,6 +5,7 @@ Try changing some of the features below and see what happens!
 Descriptions are provided to help you customize your portfolio :)
 
 When changing colors, you can use hex codes or type in simple colors like red, blue, orange, yellow.
+In Visual Studio Code, you can use the in-built color picker by clicking the small squares next to the colors.
 Hex code finder: https://imagecolorpicker.com/
 
 When changing fonts, you can use any font you'd like. Just type in the name of the font and it should work.
@@ -14,7 +15,12 @@ CSS font reference: https://www.w3schools.com/cssref/css_websafe_fonts.php
 html {
     height: 100%;
     width: 100%;
-    background-color: white; 
+    background-color: rgb(255, 255, 255); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -22,6 +28,9 @@ html {
     /* try changing between 'grid' and 'flex' to see the difference. See which one fits your preferences. */
     justify-content: space-around;
     align-items: flex-start;
+
+    margin: 0;
+    padding: 0;
 }
 
 .text-section{ /*Section with text, highlighted with border*/
@@ -30,7 +39,10 @@ html {
     When finalizing changes, you can either comment the border sections out or delete them.*/
     border-style: solid;
     border-width: 2px;
-    border-color: red;
+    border-color: rgb(138, 65, 65);
+    background-color: white;
+    border-radius: 0%;
+    /* Try changing the value of border-radius. (0%-100%) */
 
     display: grid; /*Aligns elements (text in this case) 'hamburger' style*/
     justify-content: center; /*Centers content inside text-section*/
@@ -45,7 +57,7 @@ h1{ /*Header*/
     text-align has 3 main choices: right, left, center*/ 
 }
 
-p{ /*Paragraph*/
+p{ /*Paragraph*/    
     background-color: white;
     font-family: 'Arial'; /*Changes font of paragraph element (your "default" text)*/
     font-size: 25px; /*Changes size of paragraph element*/
@@ -57,7 +69,9 @@ p{ /*Paragraph*/
     /*The 3 CSS elements below define a red border to indicate this section, purely for keeping track of spacing. You can delete or comment out these 3 when finalizing changes*/
     border-style: solid;
     border-width: 2px;
-    border-color: red;
+    border-color: rgb(138, 65, 65);
+    background-color: white;
+    border-radius: 0%;
     
     display: grid;
     /*Centers image and caption in img-section*/
@@ -73,16 +87,76 @@ img{
     border-radius: 0%; /*Changes the rounding of corners in the image. 50% will change the image into a circle.*/
 }
 
+
+.navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(138, 65, 65);
+    width: 100vw;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Arial'; 
+    font-weight: normal;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    width: 10rem;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a[href]{
+    width: 10rem;
+    height: 8vh;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul:not([class="navbar-title"]):hover{
+    background-color: rgb(201, 118, 118);
+    cursor: pointer;
+}
+
+.navbar-title{
+    background-color: rgb(98, 49, 49);
+    width: 20rem;
+    font-weight: bolder;
+}
+
+
+
+
+
 /* Fun stuff. Don't worry about this for now */
+
 .welcome-message {
     display: none;
     position: absolute;
-    top: 25%;
+    top: 20vh;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -90,13 +164,12 @@ img{
 .welcome-message p {
     font-size: 50px;
     color: red; /* Example color for the paragraph */
-    margin: 10px 0;
+    margin-top: 10vh;
 }
 
 .welcome-message img {
     width: 250px; /* Example width for the image */
     height: 250px;
-    margin-top: 10px;
 }
 
 #button {
@@ -112,10 +185,29 @@ img{
     border: none; 
     border-radius: 12px; 
     box-shadow: 0 4px #999; 
+    scale: 1;
+
+    -webkit-box-shadow:0px 0px 11px 7px rgba(222, 245, 209, 0.4);
+    -moz-box-shadow: 0px 0px 11px 7px rgba(222, 245, 209, 0.4);
+    box-shadow: 0px 0px 11px 7px rgba(222, 245, 209, 0.4);
+    
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 #button:hover {
-    background-color: red; 
+    
+    background-color: rgb(131, 219, 135);
+    scale: 1.03;
+    font-weight: bold;
+    font-size: 16px;
+
+    -webkit-box-shadow:0px 0px 11px 7px rgba(202, 250, 176, 0.9);
+    -moz-box-shadow: 0px 0px 11px 7px rgba(202, 250, 176, 0.9);
+    box-shadow: 0px 0px 11px 7px rgba(202, 250, 176, 0.9);
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out; 
 }
 
 #button:active {
