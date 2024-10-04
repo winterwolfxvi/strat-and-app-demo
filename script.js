@@ -2,7 +2,7 @@
 // In this file, there is a secret button. You can reveal the super awesome button by commenting out Line 8.
 //To comment out a line, just add two slashes at the beginning of the line like this: //
 
-//See what happens when you click the button! :D 
+//See what happens when you click the button! :D Once you figure out what is happening, settings can be found on lines 47-51.
 
 const button = document.getElementById('button');
 //button.style.display="none"; //Comment this line out to reveal the button
