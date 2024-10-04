@@ -21,7 +21,7 @@ Once you finished styling using both HTML and CSS, you can wait for instructions
 html {
     height: 100%;
     width: 100%;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(225, 232, 241); 
 }
 
 body{
@@ -44,10 +44,6 @@ body{
     Creating borders is a good way to keep track of where your sections are, and manage size, margins, and spacing
     When finalizing changes, you can either comment the border sections out or delete them.
     (You can also keep the border if you like it, up to you)*/
-    border-style: solid; /*List of border styles provided above.*/
-    border-width: 2px; /*thickness of border*/
-    border-color: rgb(138, 65, 65); /*border color*/
-    border-radius: 0%;
     /* Try changing the value of border-radius. (0%-100%) */
 
     background-color: white; /*Changes the background color of text-section section specifically.*/
@@ -58,7 +54,7 @@ body{
 
 h1{ /*Header*/
     background-color: white;
-    font-family: 'Arial'; /*Changes font of header.*/
+    font-family: 'Courier New', 'monospace';
     font-size: 50px; /*Changes size of header*/
     color: black; /*Changes color of header*/
     text-align: center; /*Aligns header to center.
@@ -67,7 +63,7 @@ h1{ /*Header*/
 
 p{ /*Paragraph*/    
     background-color: white; /*Changes "highlight" of paragraph element. Try it out :)*/
-    font-family: 'Arial'; /*Changes font of paragraph element (your "default" text)*/
+    font-family:'Courier New', 'monospace'; 
     font-size: 25px; /*Changes size of paragraph element*/
     color: black; /*Changes color of paragraph element*/
     text-align: center; /*Aligns text to center*/
@@ -76,10 +72,6 @@ p{ /*Paragraph*/
 .img-section{ /*Section with image and caption/single paragraph element inside section*/
     /*The 3 CSS elements below define a red border to indicate this section for keeping track of spacing. You can delete or comment out these 3 when finalizing changes
     (or keep it for stylization purposes :))*/
-    border-style: solid; /*List of border styles provided above.*/
-    border-width: 2px;
-    border-color: rgb(138, 65, 65);
-    border-radius: 0%;
     
     background-color: white; /*Changes background color of img-section specifically*/
     display: grid;
@@ -103,7 +95,7 @@ you can change anything highlighted with comments but dont mess with anything el
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: rgb(138, 65, 65); /*Changes secondary color of nav-bar*/
+    background-color: rgb(255, 255, 255); /*Changes secondary color of nav-bar*/
     width: 100vw;
     height: 8vh;
     margin: 0;
@@ -112,7 +104,7 @@ you can change anything highlighted with comments but dont mess with anything el
     flex-direction: row;
     font-family: 'Arial'; /*Changes font of nav-bar*/
     font-weight: normal; /*Sets default font weight of nav-bar*/
-    color: white; /*Changes color of nav-bar*/
+    color: bLACK; /*Changes color of nav-bar*/
 }
 
 li{
@@ -135,7 +127,7 @@ a[href]{
     width: 10rem;
     height: 8vh;
     font-size: 30px;
-    color: white; /*Changes color of the nav options*/
+    color: black; /*Changes color of the nav options*/
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -148,7 +140,7 @@ ul:not([class="navbar-title"]):hover{
 }
 
 .navbar-title{
-    background-color: rgb(98, 49, 49); /*changes bg color of navbar title*/
+    background-color: rgb(255, 255, 255); /*changes bg color of navbar title*/
     width: 20rem;
     font-weight: bolder;
 }

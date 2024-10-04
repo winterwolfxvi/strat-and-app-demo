@@ -5,7 +5,7 @@
 //See what happens when you click the button! :D Once you figure out what is happening, settings can be found on lines 47-51.
 
 const button = document.getElementById('button');
-button.style.display="none"; //Comment out this line out to reveal the button
+//button.style.display="none"; //Comment out this line out to reveal the button
 button.addEventListener("click", fun);
 
 function fun() {
@@ -44,9 +44,9 @@ function fun() {
     */
     
     //YOU CAN CHANGE SETTINGS HERE :))
-    const paddleWidth = 250, paddleHeight = 10; //sets height and width of paddle (what you control) in pixels
+    const paddleWidth = 506, paddleHeight = 10; //sets height and width of paddle (what you control) in pixels
     const ballRadius = 20; //sets size/radius of the ball in pixels
-    let ballSpeedX = 4, ballSpeedY = -4; //sets speed of the ball in the x and y directions (make sure to keep the negative sign for y. or not. find out yourself lol)
+    let ballSpeedX = 10, ballSpeedY = -10; //sets speed of the ball in the x and y directions (make sure to keep the negative sign for y. or not. find out yourself lol)
     const duplicateBallOnCollision = true; // Toggle ball duplication on collision
     const maxBalls = 5; // Maximum number of balls that can appear on the screen
     //YOU CAN CHANGE SETTINGS HERE :))
@@ -218,9 +218,9 @@ function fun() {
         }
 
         if (rightPressed && paddleX < canvas.width - paddleWidth) {
-            paddleX += 7;
+            paddleX += 10;
         } else if (leftPressed && paddleX > 0) {
-            paddleX -= 7;
+            paddleX -= 10;
         }
 
         requestAnimationFrame(draw);
