@@ -5,7 +5,7 @@
 //See what happens when you click the button! :D Once you figure out what is happening, settings can be found on lines 47-51.
 
 const button = document.getElementById('button');
-//button.style.display="none"; //Comment this line out to reveal the button
+button.style.display="none"; //Comment out this line out to reveal the button
 button.addEventListener("click", fun);
 
 function fun() {
