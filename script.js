@@ -162,7 +162,7 @@ function fun() {
                         x: ball.x,
                         y: ball.y,
                         radius: ball.radius,
-                        speedX: ball.speedX,
+                        speedX: ball.speedX + (Math.random() - 0.5)*1.5,
                         speedY: -ball.speedY
                     });
                 }
